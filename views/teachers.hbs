@@ -1,0 +1,10 @@
+
+    <h1>Teachers</h1>
+    {{#each instructors}}
+         {{!-- Invoking a partial here --}}
+
+        {{> info this}}
+
+         {{!-- Invoking another partial here --}}
+        {{> data this.name }}
+    {{/each}}
